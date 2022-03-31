@@ -15,9 +15,3 @@ class Answer(models.Model):
     # on_delete=models.CASCADE : 답변에 연결된 질문이 삭제되면 답변도 함께 삭제함.
     content = models.TextField()
     create_date = models.DateTimeField()
-
-
-
-
-
-
