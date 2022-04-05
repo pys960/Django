@@ -22,6 +22,7 @@ urlpatterns = [
     path('pybo/', include('pybo.urls')),
     # include('pybo.urls') 로 써줌으로써 pybo/ 로 시작 되는 페이지 요청은 모두
     # pybo/urls.py 파일에 있는 URL 매핑을 참고하여 처리하라는 의미
-
-
+    path('common/', include('common.urls')),
+    # common/으로 시작하는 URL은 모두 common/urls.py 파일을 참조할 것임.
+    path('', views.index, name='index'),  # '/' 에 해당되는 path
 ]
